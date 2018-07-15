@@ -122,7 +122,7 @@
 				float: left;
 				width: calc(100% - 100px);
 			}
-			.text p{
+			.into .content .layer .text p{
 				margin:30px 0px 0px 0px;
 				color: hsl(0,0%,46%);
 			}
@@ -286,6 +286,141 @@
 				margin-top: 36px;
 				font-size: 16px;
 			}
+			.crew{
+				position: relative;
+				height: 1084px;
+				background: hsl(0,0%,95%);
+			}
+			.crew h2{
+				position: absolute;
+				top: 100px;
+				width: 100%;
+				font-size: 42px;
+				font-weight: 400;
+				text-align: center;
+			}
+			.crew p{
+				position: absolute;
+				top: 177px;
+				left: calc(50% - 696px/2);
+				width: 696px;
+				text-align: center;
+			}
+			.crew .container{
+				position: absolute;
+				bottom: 101px;
+				left: calc(50% - 970px/2);
+				width: 970px;
+				height: 710px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.crew .container .teacher{
+				width:470px;
+				height:340px;
+				background: #f00;	
+			}
+			.crew .container .teacher.tow{
+				margin-left: 30px;
+				margin-bottom: 30px;
+			}
+			.crew .container .teacher.foer{
+				margin-left: 30px;
+			}
+			.contact{
+				position: relative;
+				height: 700px;
+				text-align: center;
+			}
+			.contact .email{
+				display: inline-block;
+				position: relative;
+				top: 70px;
+				width: 470px;
+				border: 1px solid hsl(0,0%,91%);
+				border-radius: 5px;
+			}
+			.contact .email p{
+				margin: 48px 0;
+			}
+			.contact .email input{
+				padding: 16px;
+				height: 18px;
+				width: 338px;
+			}
+			.contact .email input[type='text']{
+				margin: 30px 0;
+			}
+			.contact .email textarea{
+				margin: 0px 0px 30px 50px;
+				resize: none;
+				display: block;
+				width: 338px;
+				height: 110px;
+				padding: 16px;
+			}
+			.contact .email button{
+				width: 370px;
+				height: 50px;
+				background: hsl(0,0%,8%);
+				color: hsl(0,0%,100%);
+				border-radius: 5px;
+				margin-bottom: 65px;
+			}
+			.contact .text{
+				width: 300px;
+				display: inline-block;
+				margin-left: 129px;
+				text-align:left;
+			}
+			.contact .text .ways{
+				overflow: auto;
+				margin-top: 30px;
+			}
+			.contact .text .ways .icon{
+				width: 30px;
+				height: 36px;
+				background: #f00;
+				float: left;
+			}
+			.contact .text .ways p{
+				text-align: left;
+				float: left;
+				margin-left: 10px;
+				line-height: 35px;
+			}
+			.footer{
+				padding: 80px 180px;
+				display: flex;
+				background: hsl(0,0%,8%);
+			}
+			.footer ul{
+				margin: 0;
+				padding: 0;
+				flex: 1;
+			}
+			.footer ul li{
+				margin: 30px 0px;
+				list-style-type: none;
+				color: hsl(0,0%,32%);
+				font-size: 16px;
+			}
+			.footer ul .title{
+				margin-top: 0px;
+				color: hsl(0,0%,100%);
+				font-size: 14px;
+			}
+			.footer .container p{
+				color: hsl(0,0%,48%);
+				margin-top: 13px;
+				font-size: 16px;
+				width: 260px;
+			}
+			.footer .container .title{
+				font-size: 14px;
+				margin-top: 0px;
+				color: hsl(0,0%,100%);
+			}
 		</style>
 	<body>
 		<section class="singup">
@@ -387,13 +522,72 @@
 				</div>
 			</div>
 		</section>
-		
+			
 		<section class="crew">
-			6
+			<h2>Our Awesome Crew</h2>
+			<p>Our unique online teaching style makes learning easy for everyone. Whether you are trying to land a new job, brush up on your skills.</p>
+			<div class="container">
+					<div class="teacher one"></div>
+					<div class="teacher tow"></div>
+					<div class="teacher three"></div>
+					<div class="teacher foer"></div>
+			</div>
 		</section>
 		
-		<footer>
-			7
+		<section class="contact">
+			<div class="email">
+				<p>Fell free to Write Us</p>
+				<input type="email" placeholder="email" />
+				<input type="text" placeholder="subject" />
+				<textarea  placeholder="messages" name="message" cols="30" rows="5"></textarea>
+				<button>SEND</button>
+			</div>
+			<div class="text">
+				<h2>Contacts</h2>
+				<p>Make any design your own using the Style Editor. Personalize fonts, colors, and layouts to create the custom look you want.</p>
+				<div class="ways">
+					<div class="icon"></div>
+					<p>360 King Street  <br />
+						Feastrvale Trevose, PA 19057 </p>
+				</div>
+				<div class="ways">
+					<div class="icon"></div>
+					<p>(755) 564-84-12</p>
+				</div>
+				<div class="ways">
+					<div class="icon"></div>
+					<p>youname@mail.com</p>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="footer">
+			<ul>
+				<li class="title">Learn More</li>
+				<li>How it works?</li>
+				<li>Meeting tools</li>
+				<li>Live streaming</li>
+				<li>Contact method</li> 
+			</ul>
+			<ul>
+				<li class="title">About Us</li>
+				<li>About us</li>
+				<li>Features</li>
+				<li>Privacy police</li>
+				<li>Terms & Conditions</li>
+			</ul>
+			<ul>
+				<li class="title">Support</li>
+				<li>F.A.Q.</li>
+				<li>Contact us</li>
+				<li>Live chat</li>
+				<li>Phone call</li>
+			</ul>
+			<div class="container">
+				<p class="title">Enjoy your Life</p>
+				<p>Great web UI kit for designers, freelancers or business.</p>
+				<div class="icon"></div>
+			</div>
 		</footer>
 	</body>
 </html>
